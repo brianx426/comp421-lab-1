@@ -187,12 +187,6 @@ class LabSuite(object):
         cursor = conn.cursor()
         # Write your SQL query below. 
         # You shouldn't need to modify any other part of this function.
-                          # SELECT firstname, lastname 
-#                         FROM Ranger 
-#                        JOIN Shift ON Ranger.ranger_id = Shift.ranger_id
-#                        GROUP BY Shift.start_time
-#                        HAVING Shift.start_time <= MIN(Shift.start_time)
-
         cursor.execute("""
                        SELECT firstname, lastname
                        FROM Ranger 
